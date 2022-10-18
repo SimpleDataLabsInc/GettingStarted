@@ -7,7 +7,11 @@ from prophecy.utils import *
 from benchmarkinpyspark.graph import *
 
 def pipeline(spark: SparkSession) -> None:
-    pass
+    df_TPCH_SF1_LINEITEM = TPCH_SF1_LINEITEM(spark)
+    df_Cleanup = Cleanup(spark, df_TPCH_SF1_LINEITEM)
+    df_Aggregate_1 = Aggregate_1(spark, df_Cleanup)
+    df_OrderBy_1 = OrderBy_1(spark, df_Aggregate_1)
+    lineitem_agg_groupby(spark, df_OrderBy_1)
 
 def main():
     spark = SparkSession.builder\

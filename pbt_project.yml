@@ -13,10 +13,36 @@ pipelines:
     language: python
     createdAt: '2022-10-18 17:42:31'
     datasets:
-      inputs: []
-      outputs: []
+      inputs:
+      - 3736/datasets/TPCH_SF1_LINEITEM
+      outputs:
+      - 3736/datasets/lineitem_agg_groupby
     dependencies: {}
-datasets: {}
+datasets:
+  datasets/TPCH_SF1_LINEITEM:
+    name: TPCH_SF1_LINEITEM
+    description: ''
+    author: sparklearner123@gmail.com
+    createdAt: '2022-10-18 17:50:07'
+    physicalDatasets:
+      dev:
+        fabricId: 990
+        datasetType: Warehouse
+        description: ''
+        author: sparklearner123@gmail.com
+        createdAt: '2022-10-18 17:50:07'
+  datasets/lineitem_agg_groupby:
+    name: lineitem_agg_groupby
+    description: ''
+    author: sparklearner123@gmail.com
+    createdAt: '2022-10-18 17:56:35'
+    physicalDatasets:
+      dev:
+        fabricId: 990
+        datasetType: File
+        description: ''
+        author: sparklearner123@gmail.com
+        createdAt: '2022-10-18 17:56:35'
 templates: {}
 jobs: {}
 libraries: []

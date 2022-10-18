@@ -37,8 +37,381 @@
     },
     "topLevelPackage" : "benchmarkinpyspark"
   },
-  "connections" : [ ],
-  "processes" : { },
+  "connections" : [ {
+    "id" : "Vpb4uVWYK7XUeB3VXxBTw",
+    "source" : "OiLqCZ9yj9CycYC8FBq16$$ZmDdMOtv6k5KADqXTYYXD",
+    "sourcePort" : "N0TwauZhw9WuBszB3el99$$sv21qGmATx_WI0lTCtH8x",
+    "target" : "MaL-Xa7LH9QB4rJKWCGuM$$V36Pp4gk_hApjfWeujneL",
+    "targetPort" : "423oMuFNqdXVkdIGDHJBW$$snouTn5IwIes_DgH6DE_i"
+  }, {
+    "id" : "i67Kpw9U3iLI9E5r7pNAl",
+    "source" : "MaL-Xa7LH9QB4rJKWCGuM$$V36Pp4gk_hApjfWeujneL",
+    "sourcePort" : "54zqNpHEPSPBmgVFNV9Yr$$Nz69lfpYfSEdXundLWp0C",
+    "target" : "k7LCLaI1MokTVrQ3bmZsF$$fvcwT8O7a-1FnKYsesEnY",
+    "targetPort" : "SXzIvFEJbWQUMPCl1sVpF$$lQ1sxSvMVfJnuEh86RLXB"
+  }, {
+    "id" : "IcZwaf02UT3ntgM9gZD2p",
+    "source" : "k7LCLaI1MokTVrQ3bmZsF$$fvcwT8O7a-1FnKYsesEnY",
+    "sourcePort" : "7Iay4Qg_Z6nUqNxUNmBvd$$52M6J-O6oxyqNGLb1uLH8",
+    "target" : "eTv5Tn38t7Zddn5Ycw7rP$$yB5vmsHAsFz68fteIsv_8",
+    "targetPort" : "w5_VW_qU3rzlS87LtZO_O$$6kkpxuiIGCvdJQgutR_JT"
+  }, {
+    "id" : "ypDvEnqHxKsNzDA1-hklr",
+    "source" : "eTv5Tn38t7Zddn5Ycw7rP$$yB5vmsHAsFz68fteIsv_8",
+    "sourcePort" : "6kqW0k4eKNlNrKncEH4G6$$c_ZtjsTnOyRwBvuklRj69",
+    "target" : "YqeDDijCZyDP0ZDCa2iL8$$1HpvUAzMes0EOKKB7H74E",
+    "targetPort" : "R7u3HUKGQwi4RUTg4an-s$$Io2doBQSrpKjXTV0nm0yh"
+  } ],
+  "processes" : {
+    "OiLqCZ9yj9CycYC8FBq16$$ZmDdMOtv6k5KADqXTYYXD" : {
+      "id" : "OiLqCZ9yj9CycYC8FBq16$$ZmDdMOtv6k5KADqXTYYXD",
+      "component" : "Source",
+      "metadata" : {
+        "label" : "TPCH_SF1_LINEITEM",
+        "slug" : "TPCH_SF1_LINEITEM",
+        "x" : 120.0009239194966,
+        "y" : 120,
+        "phase" : 0,
+        "cache" : false,
+        "detailedStats" : false,
+        "isImported" : false
+      },
+      "ports" : {
+        "inputs" : [ ],
+        "outputs" : [ {
+          "id" : "N0TwauZhw9WuBszB3el99$$sv21qGmATx_WI0lTCtH8x",
+          "slug" : "out"
+        } ],
+        "selectedInputFields" : [ ],
+        "isCustomOutputSchema" : false
+      },
+      "properties" : {
+        "datasetId" : "3736/datasets/TPCH_SF1_LINEITEM"
+      }
+    },
+    "MaL-Xa7LH9QB4rJKWCGuM$$V36Pp4gk_hApjfWeujneL" : {
+      "id" : "MaL-Xa7LH9QB4rJKWCGuM$$V36Pp4gk_hApjfWeujneL",
+      "component" : "Reformat",
+      "metadata" : {
+        "label" : "Cleanup",
+        "slug" : "Cleanup",
+        "x" : 320.00045312512776,
+        "y" : 120,
+        "phase" : 0,
+        "cache" : false,
+        "detailedStats" : false,
+        "isImported" : false
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "423oMuFNqdXVkdIGDHJBW$$snouTn5IwIes_DgH6DE_i",
+          "slug" : "in0"
+        } ],
+        "outputs" : [ {
+          "id" : "54zqNpHEPSPBmgVFNV9Yr$$Nz69lfpYfSEdXundLWp0C",
+          "slug" : "out"
+        } ],
+        "selectedInputFields" : [ ],
+        "isCustomOutputSchema" : false
+      },
+      "properties" : {
+        "importLanguage" : "python",
+        "expressions" : [ {
+          "target" : "L_ORDERKEY",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "L_ORDERKEY"
+          },
+          "description" : ""
+        }, {
+          "target" : "L_PARTKEY",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "L_PARTKEY"
+          },
+          "description" : ""
+        }, {
+          "target" : "L_SUPPKEY",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "L_SUPPKEY"
+          },
+          "description" : ""
+        }, {
+          "target" : "L_LINENUMBER",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "L_LINENUMBER"
+          },
+          "description" : ""
+        }, {
+          "target" : "L_QUANTITY",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "L_QUANTITY"
+          },
+          "description" : ""
+        }, {
+          "target" : "L_EXTENDEDPRICE",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "L_EXTENDEDPRICE"
+          },
+          "description" : ""
+        }, {
+          "target" : "L_DISCOUNT",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "L_DISCOUNT"
+          },
+          "description" : ""
+        }, {
+          "target" : "L_TAX",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "if (L_TAX is null, '0.2', L_TAX)"
+          },
+          "description" : ""
+        }, {
+          "target" : "L_RETURNFLAG",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "L_RETURNFLAG"
+          },
+          "description" : ""
+        }, {
+          "target" : "L_LINESTATUS",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "L_LINESTATUS"
+          },
+          "description" : ""
+        }, {
+          "target" : "L_SHIPDATE",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "L_SHIPDATE"
+          },
+          "description" : ""
+        }, {
+          "target" : "L_COMMITDATE",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "L_COMMITDATE"
+          },
+          "description" : ""
+        }, {
+          "target" : "L_RECEIPTDATE",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "L_RECEIPTDATE"
+          },
+          "description" : ""
+        }, {
+          "target" : "L_SHIPINSTRUCT",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "regexp_replace(L_SHIPINSTRUCT, ' ', '_')"
+          },
+          "description" : ""
+        }, {
+          "target" : "L_SHIPMODE",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "regexp_replace(L_SHIPMODE, ' ', '_')"
+          },
+          "description" : ""
+        }, {
+          "target" : "L_COMMENT",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "L_COMMENT"
+          },
+          "description" : ""
+        } ],
+        "importString" : "",
+        "activeTab" : "expressions",
+        "columnsSelector" : [ "423oMuFNqdXVkdIGDHJBW$$snouTn5IwIes_DgH6DE_i##L_SHIPDATE", "423oMuFNqdXVkdIGDHJBW$$snouTn5IwIes_DgH6DE_i##L_PARTKEY", "423oMuFNqdXVkdIGDHJBW$$snouTn5IwIes_DgH6DE_i##L_LINENUMBER", "423oMuFNqdXVkdIGDHJBW$$snouTn5IwIes_DgH6DE_i##L_RETURNFLAG", "423oMuFNqdXVkdIGDHJBW$$snouTn5IwIes_DgH6DE_i##L_COMMENT", "423oMuFNqdXVkdIGDHJBW$$snouTn5IwIes_DgH6DE_i##L_DISCOUNT", "423oMuFNqdXVkdIGDHJBW$$snouTn5IwIes_DgH6DE_i##L_LINESTATUS", "423oMuFNqdXVkdIGDHJBW$$snouTn5IwIes_DgH6DE_i##L_ORDERKEY", "423oMuFNqdXVkdIGDHJBW$$snouTn5IwIes_DgH6DE_i##L_SHIPINSTRUCT", "423oMuFNqdXVkdIGDHJBW$$snouTn5IwIes_DgH6DE_i##L_TAX", "423oMuFNqdXVkdIGDHJBW$$snouTn5IwIes_DgH6DE_i##L_EXTENDEDPRICE", "423oMuFNqdXVkdIGDHJBW$$snouTn5IwIes_DgH6DE_i##L_COMMITDATE", "423oMuFNqdXVkdIGDHJBW$$snouTn5IwIes_DgH6DE_i##L_SHIPMODE", "423oMuFNqdXVkdIGDHJBW$$snouTn5IwIes_DgH6DE_i##L_QUANTITY", "423oMuFNqdXVkdIGDHJBW$$snouTn5IwIes_DgH6DE_i##L_RECEIPTDATE", "423oMuFNqdXVkdIGDHJBW$$snouTn5IwIes_DgH6DE_i##L_SUPPKEY" ]
+      }
+    },
+    "eTv5Tn38t7Zddn5Ycw7rP$$yB5vmsHAsFz68fteIsv_8" : {
+      "id" : "eTv5Tn38t7Zddn5Ycw7rP$$yB5vmsHAsFz68fteIsv_8",
+      "component" : "OrderBy",
+      "metadata" : {
+        "label" : "OrderBy_1",
+        "slug" : "OrderBy_1",
+        "x" : 720.0005485652778,
+        "y" : 120,
+        "phase" : 0,
+        "cache" : false,
+        "detailedStats" : false,
+        "isImported" : false
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "w5_VW_qU3rzlS87LtZO_O$$6kkpxuiIGCvdJQgutR_JT",
+          "slug" : "in0"
+        } ],
+        "outputs" : [ {
+          "id" : "6kqW0k4eKNlNrKncEH4G6$$c_ZtjsTnOyRwBvuklRj69",
+          "slug" : "out"
+        } ],
+        "selectedInputFields" : [ ],
+        "isCustomOutputSchema" : false
+      },
+      "properties" : {
+        "columnsSelector" : [ "w5_VW_qU3rzlS87LtZO_O$$6kkpxuiIGCvdJQgutR_JT##L_LINESTATUS", "w5_VW_qU3rzlS87LtZO_O$$6kkpxuiIGCvdJQgutR_JT##L_RETURNFLAG" ],
+        "orders" : [ {
+          "expression" : {
+            "format" : "sql",
+            "expression" : "L_RETURNFLAG"
+          },
+          "sortType" : "asc"
+        }, {
+          "expression" : {
+            "format" : "sql",
+            "expression" : "L_LINESTATUS"
+          },
+          "sortType" : "asc"
+        } ]
+      }
+    },
+    "YqeDDijCZyDP0ZDCa2iL8$$1HpvUAzMes0EOKKB7H74E" : {
+      "id" : "YqeDDijCZyDP0ZDCa2iL8$$1HpvUAzMes0EOKKB7H74E",
+      "component" : "Target",
+      "metadata" : {
+        "label" : "lineitem_agg_groupby",
+        "slug" : "lineitem_agg_groupby",
+        "x" : 920.0002026988659,
+        "y" : 120,
+        "phase" : 0,
+        "cache" : false,
+        "detailedStats" : false,
+        "isImported" : false
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "R7u3HUKGQwi4RUTg4an-s$$Io2doBQSrpKjXTV0nm0yh",
+          "slug" : "in0"
+        } ],
+        "outputs" : [ ],
+        "selectedInputFields" : [ ],
+        "isCustomOutputSchema" : false
+      },
+      "properties" : {
+        "datasetId" : "3736/datasets/lineitem_agg_groupby"
+      }
+    },
+    "k7LCLaI1MokTVrQ3bmZsF$$fvcwT8O7a-1FnKYsesEnY" : {
+      "id" : "k7LCLaI1MokTVrQ3bmZsF$$fvcwT8O7a-1FnKYsesEnY",
+      "component" : "Aggregate",
+      "metadata" : {
+        "label" : "Aggregate_1",
+        "slug" : "Aggregate_1",
+        "x" : 520.0009200898945,
+        "y" : 120,
+        "phase" : 0,
+        "cache" : false,
+        "detailedStats" : false,
+        "isImported" : false
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "SXzIvFEJbWQUMPCl1sVpF$$lQ1sxSvMVfJnuEh86RLXB",
+          "slug" : "in0"
+        } ],
+        "outputs" : [ {
+          "id" : "7Iay4Qg_Z6nUqNxUNmBvd$$52M6J-O6oxyqNGLb1uLH8",
+          "slug" : "out"
+        } ],
+        "selectedInputFields" : [ ],
+        "isCustomOutputSchema" : false
+      },
+      "properties" : {
+        "allIns" : false,
+        "doPivot" : false,
+        "aggregate" : [ {
+          "_row_id" : "",
+          "target" : "SUM_QTY",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "sum(L_QUANTITY)"
+          },
+          "description" : ""
+        }, {
+          "_row_id" : "",
+          "target" : "SUM_BASE_PRICE",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "sum(L_EXTENDEDPRICE)"
+          },
+          "description" : ""
+        }, {
+          "_row_id" : "",
+          "target" : "SUM_DISC_PRICE",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "sum(L_EXTENDEDPRICE * (1-L_DISCOUNT))"
+          },
+          "description" : ""
+        }, {
+          "_row_id" : "",
+          "target" : "SUM_CHARGE",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "sum(L_EXTENDEDPRICE * (1-L_DISCOUNT) * (1+L_TAX))"
+          },
+          "description" : ""
+        }, {
+          "_row_id" : "",
+          "target" : "AVG_QTY",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "avg(L_QUANTITY)"
+          },
+          "description" : ""
+        }, {
+          "_row_id" : "",
+          "target" : "AVG_DISC",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "avg(L_DISCOUNT)"
+          },
+          "description" : ""
+        }, {
+          "_row_id" : "",
+          "target" : "count_order",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "count(*)"
+          },
+          "description" : ""
+        } ],
+        "allowSelection" : true,
+        "pivotColumn" : null,
+        "pivotValues" : [ ],
+        "activeTab" : "groupBy",
+        "columnsSelector" : [ "SXzIvFEJbWQUMPCl1sVpF$$lQ1sxSvMVfJnuEh86RLXB##L_EXTENDEDPRICE", "SXzIvFEJbWQUMPCl1sVpF$$lQ1sxSvMVfJnuEh86RLXB##L_RETURNFLAG", "SXzIvFEJbWQUMPCl1sVpF$$lQ1sxSvMVfJnuEh86RLXB##L_DISCOUNT", "SXzIvFEJbWQUMPCl1sVpF$$lQ1sxSvMVfJnuEh86RLXB##L_QUANTITY", "SXzIvFEJbWQUMPCl1sVpF$$lQ1sxSvMVfJnuEh86RLXB##L_TAX", "SXzIvFEJbWQUMPCl1sVpF$$lQ1sxSvMVfJnuEh86RLXB##L_LINESTATUS" ],
+        "groupBy" : [ {
+          "target" : "L_RETURNFLAG",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "L_RETURNFLAG"
+          },
+          "description" : "",
+          "_row_id" : null
+        }, {
+          "target" : "L_LINESTATUS",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "L_LINESTATUS"
+          },
+          "description" : "",
+          "_row_id" : null
+        } ]
+      }
+    }
+  },
   "ports" : {
     "inputs" : [ ],
     "outputs" : [ ],

@@ -1,0 +1,24 @@
+name: SparkLearningPySpark
+description: ''
+version: 0.0.1
+author: sparklearner123@gmail.com
+language: python
+buildSystem: wheel
+pipelines:
+  pipelines/BenchmarkInPySpark:
+    name: BenchmarkInPySpark
+    description: ''
+    author: sparklearner123@gmail.com
+    mode: batch
+    language: python
+    createdAt: '2022-10-18 17:42:31'
+    datasets:
+      inputs: []
+      outputs: []
+    dependencies: {}
+datasets: {}
+templates: {}
+jobs: {}
+libraries: []
+subgraphs: {}
+dependencies: '[]'

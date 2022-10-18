@@ -44,7 +44,30 @@ datasets:
         author: sparklearner123@gmail.com
         createdAt: '2022-10-18 17:56:35'
 templates: {}
-jobs: {}
+jobs:
+  jobs/MyFirstScheduledJob:
+    name: MyFirstScheduledJob
+    description: ''
+    fabricUID: 990
+    scheduler:
+      Databricks: {}
+    jobSize: small
+    scheduleCron: 0 0 15/1 * * ? *
+    timeout: null
+    alerting:
+      emails: oncall@acme.com
+      onStart: true
+      onSuccess: false
+      onFailure: true
+    pipelines:
+    - 3736/pipelines/BenchmarkInPySpark
+    jobClusterMode:
+      clusterMode:
+        Multi: {}
+      clusterId: null
+    enabled: true
+    createdAt: '2022-10-18 18:13:01'
+    author: sparklearner123@gmail.com
 libraries: []
 subgraphs: {}
 dependencies: '[]'

@@ -1,4 +1,80 @@
 {
-  "unitTests" : [ ],
+  "unitTests" : [ {
+    "data" : {
+      "423oMuFNqdXVkdIGDHJBW$$snouTn5IwIes_DgH6DE_i" : {
+        "values" : [ [ "0.03", "COLLECT COD", "REG AIR" ], [ "0.08", "COLLECT COD", "AIR" ], [ "0.06", "NONE", "MAIL" ], [ "0.08", "TAKE BACK RETURN", "SHIP" ], [ "0.01", "COLLECT COD", "AIR" ], [ "0", "DELIVER IN PERSON", "REG AIR" ], [ "0.03", "TAKE BACK RETURN", "MAIL" ], [ "0.04", "COLLECT COD", "TRUCK" ], [ "0.01", "COLLECT COD", "MAIL" ], [ "0.03", "TAKE BACK RETURN", "AIR" ], [ "0.03", "DELIVER IN PERSON", "SHIP" ], [ "0.02", "NONE", "SHIP" ], [ "0.03", "TAKE BACK RETURN", "FOB" ], [ "0.05", "DELIVER IN PERSON", "REG AIR" ], [ "0.02", "TAKE BACK RETURN", "RAIL" ], [ "0", "TAKE BACK RETURN", "TRUCK" ], [ "0.06", "DELIVER IN PERSON", "RAIL" ], [ "0.01", "TAKE BACK RETURN", "SHIP" ], [ "0.04", "TAKE BACK RETURN", "MAIL" ], [ "0.06", "TAKE BACK RETURN", "RAIL" ] ],
+        "schema" : {
+          "type" : "struct",
+          "fields" : [ {
+            "name" : "L_TAX",
+            "type" : "decimal(12,2)",
+            "nullable" : false,
+            "metadata" : {
+              "description" : "",
+              "mappings" : [ ],
+              "tags" : [ ]
+            }
+          }, {
+            "name" : "L_SHIPINSTRUCT",
+            "type" : "string",
+            "nullable" : false,
+            "metadata" : {
+              "description" : "",
+              "mappings" : [ ],
+              "tags" : [ ]
+            }
+          }, {
+            "name" : "L_SHIPMODE",
+            "type" : "string",
+            "nullable" : false,
+            "metadata" : {
+              "description" : "",
+              "mappings" : [ ],
+              "tags" : [ ]
+            }
+          } ]
+        },
+        "predicates" : [ ]
+      },
+      "54zqNpHEPSPBmgVFNV9Yr$$Nz69lfpYfSEdXundLWp0C" : {
+        "values" : [ [ "0.03", "COLLECT_COD", "REG_AIR" ], [ "0.08", "COLLECT_COD", "AIR" ], [ "0.06", "NONE", "MAIL" ], [ "0.08", "TAKE_BACK_RETURN", "SHIP" ], [ "0.01", "COLLECT_COD", "AIR" ], [ "0.00", "DELIVER_IN_PERSON", "REG_AIR" ], [ "0.03", "TAKE_BACK_RETURN", "MAIL" ], [ "0.04", "COLLECT_COD", "TRUCK" ], [ "0.01", "COLLECT_COD", "MAIL" ], [ "0.03", "TAKE_BACK_RETURN", "AIR" ], [ "0.03", "DELIVER_IN_PERSON", "SHIP" ], [ "0.02", "NONE", "SHIP" ], [ "0.03", "TAKE_BACK_RETURN", "FOB" ], [ "0.05", "DELIVER_IN_PERSON", "REG_AIR" ], [ "0.02", "TAKE_BACK_RETURN", "RAIL" ], [ "0.00", "TAKE_BACK_RETURN", "TRUCK" ], [ "0.06", "DELIVER_IN_PERSON", "RAIL" ], [ "0.01", "TAKE_BACK_RETURN", "SHIP" ], [ "0.04", "TAKE_BACK_RETURN", "MAIL" ], [ "0.06", "TAKE_BACK_RETURN", "RAIL" ] ],
+        "schema" : {
+          "type" : "struct",
+          "fields" : [ {
+            "name" : "L_TAX",
+            "type" : "string",
+            "nullable" : true,
+            "metadata" : {
+              "description" : "",
+              "mappings" : [ ],
+              "tags" : [ ]
+            }
+          }, {
+            "name" : "L_SHIPINSTRUCT",
+            "type" : "string",
+            "nullable" : true,
+            "metadata" : {
+              "description" : "",
+              "mappings" : [ ],
+              "tags" : [ ]
+            }
+          }, {
+            "name" : "L_SHIPMODE",
+            "type" : "string",
+            "nullable" : true,
+            "metadata" : {
+              "description" : "",
+              "mappings" : [ ],
+              "tags" : [ ]
+            }
+          } ]
+        },
+        "predicates" : [ ]
+      }
+    },
+    "name" : "Unit Test 0",
+    "testType" : "outputRow",
+    "language" : "python"
+  } ],
   "language" : "python"
 }

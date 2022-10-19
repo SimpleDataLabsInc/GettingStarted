@@ -69,7 +69,7 @@
       "metadata" : {
         "label" : "TPCH_SF1_LINEITEM",
         "slug" : "TPCH_SF1_LINEITEM",
-        "x" : 120.0009239194966,
+        "x" : 120.00011492427585,
         "y" : 120,
         "phase" : 0,
         "cache" : false,
@@ -95,7 +95,7 @@
       "metadata" : {
         "label" : "Cleanup",
         "slug" : "Cleanup",
-        "x" : 320.00045312512776,
+        "x" : 320.00058341807943,
         "y" : 120,
         "phase" : 0,
         "cache" : false,
@@ -240,7 +240,7 @@
       "metadata" : {
         "label" : "OrderBy_1",
         "slug" : "OrderBy_1",
-        "x" : 720.0005485652778,
+        "x" : 720.0006637910762,
         "y" : 120,
         "phase" : 0,
         "cache" : false,
@@ -282,7 +282,7 @@
       "metadata" : {
         "label" : "lineitem_agg_groupby",
         "slug" : "lineitem_agg_groupby",
-        "x" : 920.0002026988659,
+        "x" : 920.0002712648482,
         "y" : 120,
         "phase" : 0,
         "cache" : false,
@@ -308,7 +308,7 @@
       "metadata" : {
         "label" : "Aggregate_1",
         "slug" : "Aggregate_1",
-        "x" : 520.0009200898945,
+        "x" : 520.0004070929907,
         "y" : 120,
         "phase" : 0,
         "cache" : false,

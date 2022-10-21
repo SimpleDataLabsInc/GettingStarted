@@ -1,0 +1,81 @@
+{
+  "metainfo" : {
+    "type" : "Databricks",
+    "fabricId" : "990",
+    "jobId" : "3736/jobs/HourlyJob",
+    "name" : "HourlyJob",
+    "schedule" : "0 0 15/1 * * ? *",
+    "enabled" : true,
+    "defaultClusterSize" : "small",
+    "alerting" : {
+      "emails" : "oncall@acme.com",
+      "onStart" : true,
+      "onSuccess" : false,
+      "onFailure" : true
+    },
+    "processDefaultSettings" : {
+      "type" : "Inherited",
+      "retries" : 0,
+      "alerting" : {
+        "emails" : "",
+        "onStart" : false,
+        "onSuccess" : false,
+        "onFailure" : false
+      }
+    },
+    "availableFabrics" : [ {
+      "id" : "990",
+      "name" : "dev",
+      "clusterSizes" : {
+        "default" : "small",
+        "availableClusterSizes" : [ "small" ]
+      }
+    }, {
+      "id" : "1045",
+      "name" : "Photon",
+      "clusterSizes" : {
+        "default" : "small",
+        "availableClusterSizes" : [ "small" ]
+      }
+    } ]
+  },
+  "processes" : {
+    "pWDWLQS0tHqWUgvTgF05I$$7SS1zGWeQtKPDtuhwWMUO" : {
+      "id" : "pWDWLQS0tHqWUgvTgF05I$$7SS1zGWeQtKPDtuhwWMUO",
+      "component" : "Pipeline",
+      "metadata" : {
+        "label" : "Pipeline_0",
+        "slug" : "Pipeline_0",
+        "x" : 140,
+        "y" : 160
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "vgyYTqBK0G0xE5Ksghzgx$$DQHl5RLoqJEYq2rqorGNJ"
+        } ],
+        "outputs" : [ {
+          "id" : "Cq-utP3OJZkb7LX_rsSDe$$y96AP5vRz9eVQuonN3ASK"
+        } ]
+      },
+      "settings" : {
+        "type" : "Inherited",
+        "alerting" : {
+          "emails" : "",
+          "onStart" : false,
+          "onSuccess" : false,
+          "onFailure" : false
+        }
+      },
+      "properties" : {
+        "pipelineId" : "3736/pipelines/BenchmarkInPySpark",
+        "configurations" : {
+          "schema" : [ ],
+          "instances" : [ "default" ],
+          "overrides" : { },
+          "selectedInstance" : "default"
+        }
+      }
+    }
+  },
+  "connections" : [ ]
+}

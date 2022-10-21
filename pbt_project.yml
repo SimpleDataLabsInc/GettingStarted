@@ -1,6 +1,6 @@
 name: SparkLearningPySpark
 description: ''
-version: '0.1'
+version: '0.2'
 author: sparklearner123@gmail.com
 language: python
 buildSystem: wheel

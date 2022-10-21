@@ -8,10 +8,10 @@ from benchmarkinpyspark.graph import *
 
 def pipeline(spark: SparkSession) -> None:
     df_TPCH_SF1_LINEITEM = TPCH_SF1_LINEITEM(spark)
-    df_Cleanup = Cleanup(spark, df_TPCH_SF1_LINEITEM)
-    df_Aggregate_1 = Aggregate_1(spark, df_Cleanup)
+    df_Reformat_1 = Reformat_1(spark, df_TPCH_SF1_LINEITEM)
+    df_Aggregate_1 = Aggregate_1(spark, df_Reformat_1)
     df_OrderBy_1 = OrderBy_1(spark, df_Aggregate_1)
-    lineitem_agg_groupby(spark, df_OrderBy_1)
+    dataset2(spark, df_OrderBy_1)
 
 def main():
     spark = SparkSession.builder\

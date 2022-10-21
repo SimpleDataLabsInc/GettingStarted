@@ -16,7 +16,7 @@ pipelines:
       inputs:
       - 3736/datasets/TPCH_SF1_LINEITEM
       outputs:
-      - 3736/datasets/lineitem_agg_groupby
+      - 3736/datasets/dataset2
     dependencies: {}
 datasets:
   datasets/TPCH_SF1_LINEITEM:
@@ -43,6 +43,18 @@ datasets:
         description: ''
         author: sparklearner123@gmail.com
         createdAt: '2022-10-18 17:56:35'
+  datasets/dataset2:
+    name: dataset2
+    description: ''
+    author: sparklearner123@gmail.com
+    createdAt: '2022-10-21 17:19:17'
+    physicalDatasets:
+      dev:
+        fabricId: 990
+        datasetType: File
+        description: ''
+        author: sparklearner123@gmail.com
+        createdAt: '2022-10-21 17:19:17'
 templates: {}
 jobs:
   jobs/MyFirstScheduledJob:

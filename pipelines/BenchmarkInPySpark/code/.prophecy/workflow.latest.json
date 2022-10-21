@@ -244,8 +244,8 @@
       "id" : "vUmAV4C5Qw9mCSUiHWNUX$$Xn2hzi6LUgDBCGq41RprV",
       "component" : "Reformat",
       "metadata" : {
-        "label" : "Reformat_1",
-        "slug" : "Reformat_1",
+        "label" : "Cleanup",
+        "slug" : "Cleanup",
         "x" : 320.00098514969864,
         "y" : 120,
         "phase" : 0,

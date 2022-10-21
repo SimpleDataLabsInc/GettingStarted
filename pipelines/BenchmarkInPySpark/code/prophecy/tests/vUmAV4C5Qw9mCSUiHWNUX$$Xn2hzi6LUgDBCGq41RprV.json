@@ -1,0 +1,71 @@
+{
+  "unitTests" : [ {
+    "data" : {
+      "eDUmaaG9A5b5cHsY9EiS6$$J9gplvvlRc-IoPWAqqoFc" : {
+        "values" : [ [ "0.1", "0.02", "N" ], [ "0.04", "0.02", "N" ], [ "0.09", "0.05", "N" ], [ "0", "0.01", "N" ], [ "0.02", "0.07", "N" ], [ "0", "0.01", "N" ], [ "0.06", "0.03", "A" ], [ "0.09", "0.05", "A" ], [ "0.07", "0.02", "A" ], [ "0.09", "0", "A" ], [ "0.1", "0.06", "R" ], [ "0.04", "0.01", "A" ], [ "0.09", "0.06", "A" ], [ "0.09", "0.04", "A" ], [ "0.05", "0", "R" ] ],
+        "schema" : {
+          "type" : "struct",
+          "fields" : [ {
+            "name" : "L_DISCOUNT",
+            "type" : "decimal(12,2)",
+            "nullable" : false,
+            "metadata" : {
+              "description" : "",
+              "mappings" : [ ],
+              "tags" : [ ]
+            }
+          }, {
+            "name" : "L_TAX",
+            "type" : "decimal(12,2)",
+            "nullable" : false,
+            "metadata" : {
+              "description" : "",
+              "mappings" : [ ],
+              "tags" : [ ]
+            }
+          }, {
+            "name" : "L_RETURNFLAG",
+            "type" : "string",
+            "nullable" : false,
+            "metadata" : {
+              "description" : "",
+              "mappings" : [ ],
+              "tags" : [ ]
+            }
+          } ]
+        },
+        "predicates" : [ ]
+      },
+      "oKSf81RzqTjZq_LU1Khik$$EQ-6VigZ2BJcfsomnWZ8Y" : {
+        "values" : [ [ "0.02", "false" ], [ "0.02", "false" ], [ "0.05", "false" ], [ "0.01", "false" ], [ "0.07", "false" ], [ "0.01", "false" ], [ "0.03", "false" ], [ "0.05", "false" ], [ "0.02", "false" ], [ "0.00", "false" ], [ "0.06", "false" ], [ "0.01", "false" ], [ "0.06", "false" ], [ "0.04", "false" ], [ "0.00", "false" ] ],
+        "schema" : {
+          "type" : "struct",
+          "fields" : [ {
+            "name" : "L_TAX",
+            "type" : "string",
+            "nullable" : true,
+            "metadata" : {
+              "description" : "",
+              "mappings" : [ ],
+              "tags" : [ ]
+            }
+          }, {
+            "name" : "L_CLEARANCE",
+            "type" : "string",
+            "nullable" : true,
+            "metadata" : {
+              "description" : "",
+              "mappings" : [ ],
+              "tags" : [ ]
+            }
+          } ]
+        },
+        "predicates" : [ ]
+      }
+    },
+    "name" : "Unit Test 0",
+    "testType" : "outputRow",
+    "language" : "python"
+  } ],
+  "language" : "python"
+}

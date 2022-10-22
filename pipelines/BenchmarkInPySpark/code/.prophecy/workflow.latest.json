@@ -69,7 +69,7 @@
       "metadata" : {
         "label" : "Aggregate_1",
         "slug" : "Aggregate_1",
-        "x" : 520.0000887967705,
+        "x" : 520.0009975438207,
         "y" : 120,
         "phase" : 0,
         "cache" : false,
@@ -178,7 +178,7 @@
       "metadata" : {
         "label" : "OrderBy_1",
         "slug" : "OrderBy_1",
-        "x" : 720.0006613015466,
+        "x" : 720.0009661634718,
         "y" : 120,
         "phase" : 0,
         "cache" : false,
@@ -220,7 +220,7 @@
       "metadata" : {
         "label" : "TPCH_SF1_LINEITEM",
         "slug" : "TPCH_SF1_LINEITEM",
-        "x" : 120.0008054190244,
+        "x" : 120.0009966329295,
         "y" : 120,
         "phase" : 0,
         "cache" : false,
@@ -246,7 +246,7 @@
       "metadata" : {
         "label" : "Cleanup",
         "slug" : "Cleanup",
-        "x" : 320.00098514969864,
+        "x" : 320.000972062819,
         "y" : 120,
         "phase" : 0,
         "cache" : false,
@@ -398,7 +398,7 @@
       "metadata" : {
         "label" : "dataset2",
         "slug" : "dataset2",
-        "x" : 920.0009449319011,
+        "x" : 920.0001325348793,
         "y" : 120,
         "phase" : 0,
         "cache" : false,

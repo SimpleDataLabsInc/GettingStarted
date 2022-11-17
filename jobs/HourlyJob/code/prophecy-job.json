@@ -2,10 +2,10 @@
   "metainfo" : {
     "type" : "Databricks",
     "fabricId" : "990",
-    "jobId" : "3736/jobs/HourlyJob",
+    "jobId" : "jobs/HourlyJob",
     "name" : "HourlyJob",
     "schedule" : "0 0 15/1 * * ? *",
-    "enabled" : true,
+    "enabled" : false,
     "defaultClusterSize" : "small",
     "alerting" : {
       "emails" : "oncall@acme.com",
@@ -67,7 +67,7 @@
         }
       },
       "properties" : {
-        "pipelineId" : "3736/pipelines/BenchmarkInPySpark",
+        "pipelineId" : "pipelines/BenchmarkInPySpark",
         "configurations" : {
           "schema" : [ ],
           "instances" : [ "default" ],

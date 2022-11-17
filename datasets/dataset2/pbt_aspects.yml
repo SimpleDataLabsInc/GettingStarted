@@ -38,7 +38,7 @@ schema:
       mappings: []
       tags: []
   - name: SUM_CHARGE
-    type: double
+    type: decimal(38,6)
     nullable: true
     metadata:
       description: ''

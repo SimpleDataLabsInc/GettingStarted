@@ -8,8 +8,8 @@ from benchmarkinpyspark.graph import *
 
 def pipeline(spark: SparkSession) -> None:
     df_TPCH_SF1_LINEITEM = TPCH_SF1_LINEITEM(spark)
-    df_Cleanup = Cleanup(spark, df_TPCH_SF1_LINEITEM)
-    df_Aggregate_1 = Aggregate_1(spark, df_Cleanup)
+    df_Reformat_1 = Reformat_1(spark, df_TPCH_SF1_LINEITEM)
+    df_Aggregate_1 = Aggregate_1(spark, df_Reformat_1)
     df_OrderBy_1 = OrderBy_1(spark, df_Aggregate_1)
     dataset2(spark, df_OrderBy_1)
 
@@ -22,8 +22,12 @@ def main():
                 .getOrCreate()\
                 .newSession()
     Utils.initializeFromArgs(spark, parse_args())
-    spark.conf.set("prophecy.metadata.pipeline.uri", "3736/pipelines/BenchmarkInPySpark")
-    MetricsCollector.start(spark = spark, pipelineId = "3736/pipelines/BenchmarkInPySpark")
+    spark.conf.set("prophecy.metadata.pipeline.uri", "pipelines/BenchmarkInPySpark")
+    
+    MetricsCollector.start(
+        spark = spark,
+        pipelineId = spark.conf.get("prophecy.project.id") + "/" + "pipelines/BenchmarkInPySpark"
+    )
     pipeline(spark)
     MetricsCollector.end(spark)
 

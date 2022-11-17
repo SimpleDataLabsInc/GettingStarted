@@ -50,15 +50,15 @@
     "target" : "-oUOo3dae84u1xsibS1QV$$BnsfCOr_AHmh2-azrtlab",
     "targetPort" : "EBjd19Pi8hnBiL6t8utu6$$YAaV-Uasdt8y2d5DBQxB6"
   }, {
-    "id" : "8MoB0vSQNMkAyT6Q7NJ-u",
+    "id" : "C0DEkLixg-gni1anMYwMG",
     "source" : "OiLqCZ9yj9CycYC8FBq16$$ZmDdMOtv6k5KADqXTYYXD",
     "sourcePort" : "N0TwauZhw9WuBszB3el99$$sv21qGmATx_WI0lTCtH8x",
-    "target" : "vUmAV4C5Qw9mCSUiHWNUX$$Xn2hzi6LUgDBCGq41RprV",
-    "targetPort" : "eDUmaaG9A5b5cHsY9EiS6$$J9gplvvlRc-IoPWAqqoFc"
+    "target" : "IBtYHUs-utH5RT0KSAH2z$$aDgkkN0rbHKp5OAIdYuwP",
+    "targetPort" : "WlP5qGBSfXJ5uqf8K47ra$$nD0Tk3p9yLWHf1IrOxKdk"
   }, {
-    "id" : "qvhKS_RgabWXMwRO-AxpH",
-    "source" : "vUmAV4C5Qw9mCSUiHWNUX$$Xn2hzi6LUgDBCGq41RprV",
-    "sourcePort" : "oKSf81RzqTjZq_LU1Khik$$EQ-6VigZ2BJcfsomnWZ8Y",
+    "id" : "R4eYcMgX1Pmf7CwhbDNMj",
+    "source" : "IBtYHUs-utH5RT0KSAH2z$$aDgkkN0rbHKp5OAIdYuwP",
+    "sourcePort" : "C2U4Qf3Z4upMgva-uBBMW$$34d18eVqAag2YRtiC4FJu",
     "target" : "Y5T6ylH-lDhMiIqY3ToP-$$vYTvAVYNrZhXvQ4BU2qBr",
     "targetPort" : "euosNXJ1HoBZguJRuUrVv$$5MutTsC7C-3Wb7NMhqyxm"
   } ],
@@ -69,7 +69,7 @@
       "metadata" : {
         "label" : "Aggregate_1",
         "slug" : "Aggregate_1",
-        "x" : 520.0009738485837,
+        "x" : 520.0005483684079,
         "y" : 120,
         "phase" : 0,
         "cache" : false,
@@ -178,7 +178,7 @@
       "metadata" : {
         "label" : "OrderBy_1",
         "slug" : "OrderBy_1",
-        "x" : 720.00025396625,
+        "x" : 720.0004013566671,
         "y" : 120,
         "phase" : 0,
         "cache" : false,
@@ -220,7 +220,7 @@
       "metadata" : {
         "label" : "TPCH_SF1_LINEITEM",
         "slug" : "TPCH_SF1_LINEITEM",
-        "x" : 120.0005705195862,
+        "x" : 120.00021370111239,
         "y" : 120,
         "phase" : 0,
         "cache" : false,
@@ -237,16 +237,16 @@
         "isCustomOutputSchema" : false
       },
       "properties" : {
-        "datasetId" : "3736/datasets/TPCH_SF1_LINEITEM"
+        "datasetId" : "datasets/TPCH_SF1_LINEITEM"
       }
     },
-    "vUmAV4C5Qw9mCSUiHWNUX$$Xn2hzi6LUgDBCGq41RprV" : {
-      "id" : "vUmAV4C5Qw9mCSUiHWNUX$$Xn2hzi6LUgDBCGq41RprV",
+    "IBtYHUs-utH5RT0KSAH2z$$aDgkkN0rbHKp5OAIdYuwP" : {
+      "id" : "IBtYHUs-utH5RT0KSAH2z$$aDgkkN0rbHKp5OAIdYuwP",
       "component" : "Reformat",
       "metadata" : {
-        "label" : "Cleanup",
-        "slug" : "Cleanup",
-        "x" : 320.0001261204422,
+        "label" : "Reformat_1",
+        "slug" : "Reformat_1",
+        "x" : 320.00054086522687,
         "y" : 120,
         "phase" : 0,
         "cache" : false,
@@ -255,11 +255,11 @@
       },
       "ports" : {
         "inputs" : [ {
-          "id" : "eDUmaaG9A5b5cHsY9EiS6$$J9gplvvlRc-IoPWAqqoFc",
+          "id" : "WlP5qGBSfXJ5uqf8K47ra$$nD0Tk3p9yLWHf1IrOxKdk",
           "slug" : "in0"
         } ],
         "outputs" : [ {
-          "id" : "oKSf81RzqTjZq_LU1Khik$$EQ-6VigZ2BJcfsomnWZ8Y",
+          "id" : "C2U4Qf3Z4upMgva-uBBMW$$34d18eVqAag2YRtiC4FJu",
           "slug" : "out"
         } ],
         "selectedInputFields" : [ ],
@@ -268,128 +268,16 @@
       "properties" : {
         "importLanguage" : "python",
         "expressions" : [ {
-          "target" : "L_ORDERKEY",
-          "expression" : {
-            "format" : "sql",
-            "expression" : "L_ORDERKEY"
-          },
-          "description" : ""
-        }, {
-          "target" : "L_PARTKEY",
-          "expression" : {
-            "format" : "sql",
-            "expression" : "L_PARTKEY"
-          },
-          "description" : ""
-        }, {
-          "target" : "L_SUPPKEY",
-          "expression" : {
-            "format" : "sql",
-            "expression" : "L_SUPPKEY"
-          },
-          "description" : ""
-        }, {
-          "target" : "L_LINENUMBER",
-          "expression" : {
-            "format" : "sql",
-            "expression" : "L_LINENUMBER"
-          },
-          "description" : ""
-        }, {
-          "target" : "L_QUANTITY",
-          "expression" : {
-            "format" : "sql",
-            "expression" : "L_QUANTITY"
-          },
-          "description" : ""
-        }, {
-          "target" : "L_EXTENDEDPRICE",
-          "expression" : {
-            "format" : "sql",
-            "expression" : "L_EXTENDEDPRICE"
-          },
-          "description" : ""
-        }, {
-          "target" : "L_DISCOUNT",
-          "expression" : {
-            "format" : "sql",
-            "expression" : "L_DISCOUNT"
-          },
-          "description" : ""
-        }, {
           "target" : "L_TAX",
           "expression" : {
             "format" : "sql",
-            "expression" : "if (L_TAX is null, '0.02', L_TAX)"
-          },
-          "description" : ""
-        }, {
-          "target" : "L_RETURNFLAG",
-          "expression" : {
-            "format" : "sql",
-            "expression" : "L_RETURNFLAG"
-          },
-          "description" : ""
-        }, {
-          "target" : "L_LINESTATUS",
-          "expression" : {
-            "format" : "sql",
-            "expression" : "L_LINESTATUS"
-          },
-          "description" : ""
-        }, {
-          "target" : "L_SHIPDATE",
-          "expression" : {
-            "format" : "sql",
-            "expression" : "L_SHIPDATE"
-          },
-          "description" : ""
-        }, {
-          "target" : "L_COMMITDATE",
-          "expression" : {
-            "format" : "sql",
-            "expression" : "L_COMMITDATE"
-          },
-          "description" : ""
-        }, {
-          "target" : "L_RECEIPTDATE",
-          "expression" : {
-            "format" : "sql",
-            "expression" : "L_RECEIPTDATE"
-          },
-          "description" : ""
-        }, {
-          "target" : "L_SHIPINSTRUCT",
-          "expression" : {
-            "format" : "sql",
-            "expression" : "L_SHIPINSTRUCT"
-          },
-          "description" : ""
-        }, {
-          "target" : "L_SHIPMODE",
-          "expression" : {
-            "format" : "sql",
-            "expression" : "L_SHIPMODE"
-          },
-          "description" : ""
-        }, {
-          "target" : "L_COMMENT",
-          "expression" : {
-            "format" : "sql",
-            "expression" : "L_COMMENT"
-          },
-          "description" : ""
-        }, {
-          "target" : "L_CLEARANCE",
-          "expression" : {
-            "format" : "sql",
-            "expression" : "case when (\n    L_DISCOUNT > 60\n)\nor (\n    L_RETURNFLAG is true\n) then 'true' else 'false' end"
+            "expression" : "cast(if (L_TAX is null, '0.2', L_TAX) as decimal(12,2))"
           },
           "description" : ""
         } ],
         "importString" : "",
         "activeTab" : "expressions",
-        "columnsSelector" : [ "eDUmaaG9A5b5cHsY9EiS6$$J9gplvvlRc-IoPWAqqoFc##L_RETURNFLAG", "eDUmaaG9A5b5cHsY9EiS6$$J9gplvvlRc-IoPWAqqoFc##L_SHIPDATE", "eDUmaaG9A5b5cHsY9EiS6$$J9gplvvlRc-IoPWAqqoFc##L_TAX", "eDUmaaG9A5b5cHsY9EiS6$$J9gplvvlRc-IoPWAqqoFc##L_DISCOUNT", "eDUmaaG9A5b5cHsY9EiS6$$J9gplvvlRc-IoPWAqqoFc##L_LINESTATUS", "eDUmaaG9A5b5cHsY9EiS6$$J9gplvvlRc-IoPWAqqoFc##L_SUPPKEY", "eDUmaaG9A5b5cHsY9EiS6$$J9gplvvlRc-IoPWAqqoFc##L_COMMENT", "eDUmaaG9A5b5cHsY9EiS6$$J9gplvvlRc-IoPWAqqoFc##L_COMMITDATE", "eDUmaaG9A5b5cHsY9EiS6$$J9gplvvlRc-IoPWAqqoFc##L_ORDERKEY", "eDUmaaG9A5b5cHsY9EiS6$$J9gplvvlRc-IoPWAqqoFc##L_SHIPINSTRUCT", "eDUmaaG9A5b5cHsY9EiS6$$J9gplvvlRc-IoPWAqqoFc##L_RECEIPTDATE", "eDUmaaG9A5b5cHsY9EiS6$$J9gplvvlRc-IoPWAqqoFc##L_PARTKEY", "eDUmaaG9A5b5cHsY9EiS6$$J9gplvvlRc-IoPWAqqoFc##L_EXTENDEDPRICE", "eDUmaaG9A5b5cHsY9EiS6$$J9gplvvlRc-IoPWAqqoFc##L_SHIPMODE", "eDUmaaG9A5b5cHsY9EiS6$$J9gplvvlRc-IoPWAqqoFc##L_QUANTITY", "eDUmaaG9A5b5cHsY9EiS6$$J9gplvvlRc-IoPWAqqoFc##L_LINENUMBER" ]
+        "columnsSelector" : [ "WlP5qGBSfXJ5uqf8K47ra$$nD0Tk3p9yLWHf1IrOxKdk##L_TAX" ]
       }
     },
     "-oUOo3dae84u1xsibS1QV$$BnsfCOr_AHmh2-azrtlab" : {
@@ -398,7 +286,7 @@
       "metadata" : {
         "label" : "dataset2",
         "slug" : "dataset2",
-        "x" : 920.0000823298279,
+        "x" : 920.00088384577,
         "y" : 120,
         "phase" : 0,
         "cache" : false,
@@ -415,7 +303,7 @@
         "isCustomOutputSchema" : false
       },
       "properties" : {
-        "datasetId" : "3736/datasets/dataset2"
+        "datasetId" : "datasets/dataset2"
       }
     }
   },
